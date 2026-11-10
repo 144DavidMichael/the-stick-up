@@ -24,3 +24,22 @@
     }
   });
 })();
+
+(function () {
+  "use strict";
+  var coarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+  var short = Math.min(screen.width, screen.height);
+  var device = coarse ? (short < 600 ? "phone" : "tablet") : "desktop";
+  var pick = device === "tablet" ? "portrait" : "landscape";
+  var li = document.querySelector('.device-guide li[data-device="' + device + '"]');
+  if (li) li.classList.add("is-you");
+  var card = document.getElementById("card-" + pick);
+  if (card) {
+    var badge = document.createElement("span");
+    badge.className = "rec-badge";
+    badge.textContent = "Best for your screen";
+    var body = card.querySelector(".body");
+    if (body) body.insertBefore(badge, body.firstChild);
+    card.classList.add("is-recommended");
+  }
+})();
