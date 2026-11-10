@@ -79,6 +79,12 @@
         </svg>
       </button>
       <div class="spacer"></div>
+      <button class="text-btn song-btn" type="button" id="btn-song" aria-label="Play the song At The Bank" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="ic-play"><path d="M8 5 L19 12 L8 19 Z"></path></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="ic-pause"><path d="M8 5 V19 M16 5 V19"></path></svg>
+        <span class="song-label">Play song</span>
+      </button>
+      <audio id="song" preload="none" src="audio/at-the-bank.mp3"></audio>
       <p class="page-meter" id="page-meter" aria-live="polite">Page 1 of 15</p>
       <div class="spacer"></div>
       <button class="icon-btn" type="button" id="btn-prev" aria-label="Previous page">
@@ -100,5 +106,6 @@
 
   <script src="js/manifest.js" defer></script>
   <script src="js/reader.js" defer></script>
+  <script src="js/song.js" defer></script>
 </body>
 </html>
