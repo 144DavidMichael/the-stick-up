@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Stick Up — reader</title>
+  <meta name="description" content="Read The Stick Up, a comic book by DavidMichael Bogard.">
+  <meta name="theme-color" content="#120e0a">
+  <meta name="author" content="DavidMichael Bogard">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/site.css">
+
+  <!-- Social preview image also lives at the relative path images/og-cover.jpg.
+       Open Graph and Twitter cards require the absolute URL below. -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://144davidmichael.github.io/the-stick-up/">
+  <meta property="og:title" content="The Stick Up — a comic by DMB">
+  <meta property="og:description" content="The Stick Up, a comic book by DavidMichael Bogard. A companion to the song At The Bank by DMB. Be not afraid.">
+  <meta property="og:image" content="https://144davidmichael.github.io/the-stick-up/images/og-cover.jpg">
+  <meta property="og:image:secure_url" content="https://144davidmichael.github.io/the-stick-up/images/og-cover.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Stick Up — a comic by DMB">
+  <meta name="twitter:image" content="https://144davidmichael.github.io/the-stick-up/images/og-cover.jpg">
+</head>
+<body class="reader" data-edition="portrait">
+  <div class="reader-app">
+    <header class="chrome top">
+      <a class="icon-btn" href="index.html" aria-label="Back to the title page">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 5 L8 12 L15 19"></path>
+        </svg>
+      </a>
+      <a class="title-link" href="index.html">The Stick Up</a>
+      <button class="text-btn" type="button" id="btn-switch" aria-label="Switch edition">Landscape</button>
+      <button class="icon-btn" type="button" id="btn-full" aria-label="Enter fullscreen">
+        <svg viewBox="0 0 24 24" aria-hidden="true" id="icon-full">
+          <path d="M8 4 H4 V8"></path>
+          <path d="M16 4 H20 V8"></path>
+          <path d="M8 20 H4 V16"></path>
+          <path d="M16 20 H20 V16"></path>
+        </svg>
+      </button>
+    </header>
+
+    <main class="stage" id="stage" tabindex="0">
+      <div class="page-frame" id="page-frame">
+        <picture id="page-picture">
+          <source id="page-webp" type="image/webp" srcset="images/portrait/page-01.webp">
+          <img
+            id="page-img"
+            src="images/portrait/page-01.jpg"
+            width="1325"
+            height="2050"
+            alt="The Stick Up, portrait page 1"
+            decoding="async">
+        </picture>
+      </div>
+
+      <button class="hotspot hotspot-prev" type="button" id="hot-prev" aria-label="Previous page"></button>
+      <button class="hotspot hotspot-toggle" type="button" id="hot-toggle" aria-label="Show or hide the toolbars"></button>
+      <button class="hotspot hotspot-next" type="button" id="hot-next" aria-label="Next page"></button>
+
+      <p class="hint" id="rotate-hint" hidden>Turn your phone sideways to see this edition larger.</p>
+    </main>
+
+    <footer class="chrome bottom">
+      <button class="icon-btn" type="button" id="btn-thumbs" aria-label="Open page thumbnails" aria-expanded="false" aria-controls="thumbs">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+        </svg>
+      </button>
+      <div class="spacer"></div>
+      <p class="page-meter" id="page-meter" aria-live="polite">Page 1 of 15</p>
+      <div class="spacer"></div>
+      <button class="icon-btn" type="button" id="btn-prev" aria-label="Previous page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 L8 12 L15 19"></path></svg>
+      </button>
+      <button class="icon-btn" type="button" id="btn-next" aria-label="Next page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5 L16 12 L9 19"></path></svg>
+      </button>
+    </footer>
+
+    <div class="thumbs" id="thumbs" hidden>
+      <div class="thumbs-head">
+        <span>Pages</span>
+        <button class="text-btn" type="button" id="btn-thumbs-close" aria-label="Close page thumbnails">Close</button>
+      </div>
+      <div class="thumbs-grid" id="thumbs-grid"></div>
+    </div>
+  </div>
+
+  <script src="js/manifest.js" defer></script>
+  <script src="js/reader.js" defer></script>
+</body>
+</html>

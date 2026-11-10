@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Stick Up — a comic by DMB</title>
+  <meta name="description" content="The Stick Up, a comic book by DavidMichael Bogard. A companion to the song At The Bank by DMB. Be not afraid.">
+  <meta name="theme-color" content="#120e0a">
+  <meta name="author" content="DavidMichael Bogard">
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/site.css">
+
+  <!-- Social preview image also lives at the relative path images/og-cover.jpg.
+       Open Graph and Twitter cards require the absolute URL below. -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://144davidmichael.github.io/the-stick-up/">
+  <meta property="og:title" content="The Stick Up — a comic by DMB">
+  <meta property="og:description" content="The Stick Up, a comic book by DavidMichael Bogard. A companion to the song At The Bank by DMB. Be not afraid.">
+  <meta property="og:image" content="https://144davidmichael.github.io/the-stick-up/images/og-cover.jpg">
+  <meta property="og:image:secure_url" content="https://144davidmichael.github.io/the-stick-up/images/og-cover.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cathedral Bank at sunrise, with the title The Stick Up and the line Be not afraid.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Stick Up — a comic by DMB">
+  <meta name="twitter:description" content="The Stick Up, a comic book by DavidMichael Bogard. A companion to the song At The Bank by DMB. Be not afraid.">
+  <meta name="twitter:image" content="https://144davidmichael.github.io/the-stick-up/images/og-cover.jpg">
+</head>
+<body class="home">
+  <div class="home-shell">
+    <div class="home-hero">
+      <picture>
+        <source type="image/webp" srcset="images/hero-art.webp">
+        <img
+          src="images/hero-art.jpg"
+          width="1800"
+          height="1017"
+          alt="Cathedral Bank at sunrise, the stone facade and fountains of the building where The Stick Up begins.">
+      </picture>
+    </div>
+
+    <main class="home-panel">
+      <header class="masthead">
+        <p class="eyebrow">THE</p>
+        <h1>STICK UP</h1>
+        <hr class="rule">
+        <p class="tagline">Be not afraid</p>
+        <p class="byline">Written by DavidMichael Bogard</p>
+      </header>
+
+      <p class="choose-label" id="choose-label">Choose an edition</p>
+      <div class="editions" role="list" aria-labelledby="choose-label">
+        <a class="edition-card portrait" role="listitem" id="card-portrait" href="reader.html?edition=portrait">
+          <div class="thumb">
+            <img src="images/portrait/thumbs/page-01.jpg" width="200" height="310" alt="">
+          </div>
+          <div class="body">
+            <h2>Portrait</h2>
+            <p>Classic comic pages. Best for phones held upright.</p>
+            <span class="cta" data-cta="portrait">Read</span>
+          </div>
+        </a>
+
+        <a class="edition-card landscape" role="listitem" id="card-landscape" href="reader.html?edition=landscape">
+          <div class="thumb">
+            <img src="images/landscape/thumbs/page-01.jpg" width="320" height="134" alt="">
+          </div>
+          <div class="body">
+            <h2>Landscape</h2>
+            <p>One panel per page, cinematic. Best for desktop or a sideways phone.</p>
+            <span class="cta" data-cta="landscape">Read</span>
+          </div>
+        </a>
+      </div>
+
+      <a class="video-link" href="https://youtu.be/ql3aMtpoIs8" rel="noopener noreferrer" target="_blank">
+        Watch the music video <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </main>
+  </div>
+
+  <script src="js/manifest.js" defer></script>
+  <script src="js/home.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "title": "The Stick Up",
+  "author": "DavidMichael Bogard",
+  "video": "https://youtu.be/ql3aMtpoIs8",
+  "editions": {
+    "portrait": {
+      "id": "portrait",
+      "label": "Portrait",
+      "blurb": "Classic comic pages. Best for phones held upright.",
+      "pages": 15,
+      "dir": "images/portrait",
+      "width": 1325,
+      "height": 2050
+    },
+    "landscape": {
+      "id": "landscape",
+      "label": "Landscape",
+      "blurb": "One panel per page, cinematic. Best for desktop or a sideways phone.",
+      "pages": 41,
+      "dir": "images/landscape",
+      "width": 2449,
+      "height": 1029
+    }
+  }
+}
